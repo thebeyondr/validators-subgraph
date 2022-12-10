@@ -1,0 +1,11 @@
+type DepositEvent @entity(immutable: true) {
+  id: Bytes!
+  pubkey: Bytes! # bytes
+  withdrawal_credentials: Bytes! # bytes
+  amount: Bytes! # bytes
+  signature: Bytes! # bytes
+  index: Bytes! # bytes
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
